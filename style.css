@@ -295,17 +295,14 @@ body {
     color: rgb(243, 181, 25);
 }
 
-/* --- MOBILE & TABLET STYLINGS (Screens under 768px wide) --- */
 @media (max-width: 768px) {
     
-    /* 1. Stop horizontal squishing by stacking elements vertically */
     #header {
         flex-direction: column;
         padding: 15px;
         gap: 15px;
     }
 
-    /* 2. Wrap navbar links so words have space to drop down cleanly */
     #navbar {
         flex-direction: row;
         flex-wrap: wrap;
@@ -314,9 +311,15 @@ body {
         padding: 0;
     }
 
-    /* 3. Make text words slightly smaller so they fit comfortably on mobile */
     #navbar li a {
         font-size: 14px;
         padding: 5px 8px;
     }
 }
+
+    #hero {
+        background-size: cover;
+        background-position: center;
+        height: 50vh; 
+        padding: 0 20px;
+    }

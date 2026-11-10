@@ -110,7 +110,7 @@ body {
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: top 25%, center;
     padding: 0 80px;
     display: flex;
     flex-direction: column;

@@ -68,6 +68,70 @@ body {
     justify-content: center;
 }
 
+#navbar .dropdown {
+    position: relative;
+}
+
+#shop-toggle {
+    display: none;
+}
+
+#navbar .drop-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FDF5E6;
+    cursor: pointer;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+#navbar .drop-label:hover,
+#shop-toggle:checked + .drop-label {
+    color: orange;
+}
+
+#navbar .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    background-color: black;
+    border: 3px solid darkorchid;
+    border-radius: 8px;
+    min-width: 220px;
+    padding: 8px 0;
+    margin-top: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#shop-toggle:checked ~ .dropdown-menu {
+    display: flex;
+}
+
+#navbar .dropdown-menu li {
+    width: 100%;
+    padding: 0;
+}
+
+#navbar .dropdown-menu li a {
+    display: block;
+    padding: 10px 18px;
+    font-size: 14px;
+    color: #FDF5E6;
+}
+
+#navbar .dropdown-menu li a:hover {
+    background-color: darkorchid;
+    color: orange;
+}
+
+#navbar .dropdown-menu li a::after {
+    display: none;
+}
+
+
 #navbar li{
     list-style: none;
     padding: 0 20px;
